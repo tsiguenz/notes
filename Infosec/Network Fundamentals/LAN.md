@@ -39,7 +39,7 @@ Router are usefull for connect multiple networks between them. It does this by u
 ## Subnetting
 
 Subnetting is the term given to spliting up a network into smaller networks.
-Subnets use IP addresses in three different ways :
+Subnets use [[Intro#Identifying devices on a network|IP addresses]] in three different ways :
 - Identify the network address
 - Identify the host address
 - Identify the default gateway
@@ -61,3 +61,28 @@ Subnetting provides a range of benefits, including :
 
 ---
 
+## ARP Protocol
+
+The [ARP Protocol](https://en.wikipedia.org/wiki/Address_Resolution_Protocol) (Ardress Resolution Protocol) is the technology that is responsible to allowing devices to identify themselves on a network with the pair [[INTRO#Identifying devices on a network|MAC address and IP address]]. Each device keep a log of the MAC address associated with other devices. Each device within a network has a ledger to store information on, which is called a cache. In this context, the cache store the identifiers of other devices in the network.
+
+In order to map these two identifiers together ([[INTRO#Identifying devices on a network|IP and MAC addresses]]), the ARP protocol send two diffents types of messages :
+- ARP Request (blue on the image)
+- ARP Reply (red on the image)
+
+![ARP](images/ARP_Protocol.png)
+
+---
+
+## DHCP Protocol
+
+[[INTRO#Identifying devices on a network|IP addresses]] can be assigned manually or automatically with [DHCP](https://en.wikipedia.org/wiki/Dynamic_Host_Configuration_Protocol) (Dynamic Host Configuration Protocol) server.
+
+DHCP Protocol allow differents messages:
+- DHCP Discover
+- DHCP Offer
+- DHCP Request
+- DHCP ACK (Acknowledge)
+
+![DHCP_Protocol](images/DHCP_Protocol.png)
+
+---
