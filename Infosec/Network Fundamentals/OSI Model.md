@@ -15,5 +15,5 @@ OSI Model is represented by seven layers who has differents responsabilities, th
 |5|Session|Create a unique connection (called session when the connection is established) to the computer that the data is destinated for. Then divide the data in small chunk called "packets". It is beneficial because if the connection is lost, we don't need to sent all the data a second time.|
 |4|Transport|Data is sent with [[TCP & UDP#TCP\|TCP]] or [[TCP & UDP#UDP\|UDP]] according to the type of data.|
 |3|Network|Where the routing and the re-assembly take place. Determine the better path data should take to reach the device using [OSPF (Open Shortest Path First)](https://en.wikipedia.org/wiki/Open_Shortest_Path_First) and [RIP (Routing Information Protocol)](https://en.wikipedia.org/wiki/Routing_Information_Protocol).|
-|2|Data Link|Ensure proper transmission and check for errors using [[Intro#Identifying devices on a network\|MAC addresses]] and [LLC (Logical Link Control)](https://en.wikipedia.org/wiki/Logical_link_control)|
-|1|Physical||
+|2|Data Link|Ensure proper transmission and check for errors using [[Intro#Identifying devices on a network\|MAC addresses]] and [LLC (Logical Link Control)](https://en.wikipedia.org/wiki/Logical_link_control).|
+|1|Physical|Device use electrical signals to transfert data with binary numbering system.|
