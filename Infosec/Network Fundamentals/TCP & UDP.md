@@ -10,6 +10,8 @@ The [Transmission Control Protocol (TCP)](https://en.wikipedia.org/wiki/Transmis
 
 TCP is used for file sharing or email sending for exemple or other things where the data need to be complete.
 
+More details in [[Packets & Frames#TCP/IP|Packets & Frames]].
+
 ---
 
 ## UDP
