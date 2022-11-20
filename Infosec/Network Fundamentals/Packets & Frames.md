@@ -6,7 +6,7 @@ They are small piece of data that make a larger piece of information or message 
 
 ### TCP/IP
 
-TCP/IP is very similar to OSI model. It consist of four layers and is arguably summary of the OSI model.
+TCP/IP is very similar to OSI model. Its based on the [[TCP & UDP#TCP|TCP]] protocol. It consist of four layers and is arguably summary of the OSI model.
 
 These layers are :
 - Application
@@ -42,10 +42,44 @@ Every connection with TCP used the *three-way handshake*, the devices communicat
 This is a normal three-way handshake :
 ![tcphandshake](images/tcphandshake.png)
 
-1 - Client sent the SYN packet with his initial sequence number to synchronise with.
-2 - Server sent the SYN/ACK packet with his initial sequence number and acknowledge the initial sequence number of the client.
-3 - Client sent the ACK packet to acknowledge the initial sequence number of the server.
+- Client sent the SYN packet with his initial sequence number to synchronise with.
+- Server sent the SYN/ACK packet with his initial sequence number and acknowledge the initial sequence number of the client.
+- Client sent the ACK packet to acknowledge the initial sequence number of the server.
 
 ![tcp_connect.png](images/tcp_connect.png)
 
 ---
+
+### UCP/IP
+
+The UDP/IP model is based on the [[TCP & UDP#UDP|UDP]] protocol that not require three way handshake like TCP because UDP does not require constant connection between the devices. It is used when data can be lost like streaming or voice communication.
+
+UDP packets are much simpler than TCP packets:
+- Time to live (TTL)
+- Source address
+- Destination address
+- Source port
+- Destination port
+- Data
+
+![UDP](images/udp.png)
+
+---
+
+### Port
+
+A [Port](https://en.wikipedia.org/wiki/Port_(computer_networking)) is a number between 0 and 65535 who refer to a virtual point where we can send or receive datas. A device can choose what port is listening or not.
+Ports have standard rules that associate a port and a protocol by default.
+
+Commons ports usefull in cyber security:
+
+| Port | Protocol |
+| ---- | ----------- |
+| 21 | FTP (File Transfer Protocol) |
+| 22 | SSH (Secure shell) |
+| 80 | HTTP (Hyper Text Transfer Protocol) |
+| 443 | HTTPS (Hyper Text Transfer Protocol Secure) |
+| 445 | SMB (Server Message Block) |
+| 3389 | RDP (Remote Desktoop Protocol) |
+
+[Here](https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers) a list of the ports and there protocol.
